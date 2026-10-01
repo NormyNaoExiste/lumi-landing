@@ -128,7 +128,7 @@ section p {
     display: flex;
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid red;
+    
     justify-content: space-around;
     padding: 10px 10px 10px;
     gap: 20px;
@@ -146,30 +146,39 @@ section p {
 .card-container ul{
     padding: auto;
     text-align: center;
-    list-style: none;
+
 }
 
 .card-grid{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    border: 1px solid red;
+    
     margin: auto;
+    justify-content: center;
 }
+.card-grid button{
+    width: 250px;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
 .card-item{
     color: #0D0B10;
-    border: 1px solid red;
+    
     margin: auto;
 }
 .card-photo{
     width: 100dvh;
     height: 100%;
     border-radius: 2rem;
-    border: 1px solid red;
+    
 }
+
 
 /* ===== Footer ===== */
 footer {
-    background-color: #2e1f6b;
+    background-color: var(--card-clr);
     color: #cfc6f5;
     text-align: center;
     padding: 1.5rem;
