@@ -1,0 +1,149 @@
+:root{
+    --base-clr: #0D0B10;
+    --line-clr: #342e3e;
+    --hover-clr: #3e2355;
+    --text-clr: #9061ef;
+    --secondary-text: #f0eef4;
+    --accent-clr: #ffffff;
+    --button-clr: #3e2355;
+    --danger-clr: #E5484D;
+    --card-clr: #703d9e;
+}
+
+/* ===== Reset simples ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--base-clr);
+    color: var(--secondary-text);
+    line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+nav {
+    background-color: var(--base-clr);
+    padding: 1rem 2rem;
+    position: sticky;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* ===== Banner ===== */
+.banner {
+    background: linear-gradient(135deg, var(--card-clr), var(--button-clr));
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1.5rem;
+}
+
+.banner-text {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.button-box button {
+    background-color: #fff;
+    color: #5a3dd4;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, background-color 0.15s;
+}
+
+.button-box button:hover {
+    background-color: #e9e3ff;
+    transform: translateY(-2px);
+}
+
+.button-box button:nth-child(2) {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.button-box button:nth-child(2):hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Seções (Sobre / Downloads) ===== */
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+section h2 {
+    color: #4b2fb0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section p {
+    color: #5a4c78;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#downloads {
+    background-color: #ece6ff;
+    border-radius: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #2e1f6b;
+    color: #cfc6f5;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 600px) {
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .banner-text {
+        font-size: 1.8rem;
+    }
+
+    .button-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
