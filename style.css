@@ -169,9 +169,12 @@ section p {
     margin: auto;
 }
 .card-photo{
-    width: 100dvh;
+    width:45%;
+    max-width: 380px;
     height: 100%;
+    object-fit: cover;
     border-radius: 2rem;
+    flex-shrink: 0;
     
 }
 
