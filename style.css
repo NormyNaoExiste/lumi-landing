@@ -2,7 +2,7 @@
     --base-clr: #0D0B10;
     --line-clr: #342e3e;
     --hover-clr: #3e2355;
-    --text-clr: #9061ef;
+    --text-clr: #c6b2ef;
     --secondary-text: #f0eef4;
     --accent-clr: #ffffff;
     --button-clr: #3e2355;
@@ -29,6 +29,8 @@ nav {
     background-color: var(--base-clr);
     padding: 1rem 2rem;
     position: sticky;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul {
@@ -120,6 +122,49 @@ section p {
 #downloads {
     background-color: #ece6ff;
     border-radius: 1rem;
+}
+
+.card-container{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid red;
+    justify-content: space-around;
+    padding: 10px 10px 10px;
+    gap: 20px;
+    background-color: var(--card-clr);
+    color: var(--text-clr);
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+.card-container h2{
+    color: var(--text-clr);
+}
+.card-container p, ul{
+    color: var(--secondary-text);
+}
+.card-container ul{
+    padding: auto;
+    text-align: center;
+    list-style: none;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid red;
+    margin: auto;
+}
+.card-item{
+    color: #0D0B10;
+    border: 1px solid red;
+    margin: auto;
+}
+.card-photo{
+    width: 100dvh;
+    height: 100%;
+    border-radius: 2rem;
+    border: 1px solid red;
 }
 
 /* ===== Footer ===== */
